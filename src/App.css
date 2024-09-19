@@ -6,7 +6,7 @@
   width: 100%;
 }
 .main-container {
-  height: 55.5rem;
+  height: auto;
 }
 .container {
   max-width: 100%;
@@ -14,7 +14,6 @@
   padding: 10px 20px;
   display: flex;
   justify-content: space-between;
-  background-color: #f1f5f9;
 }
 @media screen and (max-width: 768px) {
   .container {

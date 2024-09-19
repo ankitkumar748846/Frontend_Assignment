@@ -1,11 +1,11 @@
 .DashBoard {
   width: fit-content;
   padding: 9px;
-  height: 55.5rem;
+  height: auto;
   display: flex;
   flex-direction: column;
-  overflow-y: auto;
-  overflow-x: hidden;
+  /* overflow-y: auto;
+  overflow-x: hidden; */
   align-items: center;
 }
 @media screen and (max-width: 768px) {
