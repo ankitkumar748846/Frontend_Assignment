@@ -1,21 +1,26 @@
 .user {
-    display: flex;
-  }
-  .icon {
-    height: 40px;
-    width: 40px;
-    background-color: blue;
-    display: grid;
-    place-items: center;
-    border-radius: 50%;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    text-transform: uppercase;
-    color: white;
-    font-weight: 700;
-  }
-  .dot {
-    position: relative;
-    top: 25px;
-    right: 15px;
-    color: grey;
-  }
+  display: flex;
+  width: fit-content;
+  position: relative;
+}
+.icon {
+  height: 34px;
+  width: 34px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 700;
+}
+.dot {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  bottom: -4px;
+  right: -2px;
+  border: 2px solid white;
+  border-radius: 50%;
+  background-color: green;
+  color: grey;
+}

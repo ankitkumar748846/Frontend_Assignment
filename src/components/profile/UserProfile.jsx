@@ -1,15 +1,14 @@
-import './UserProfile.css'
-import { FaCircle } from 'react-icons/fa6'
+import "./UserProfile.css";
 
 const UserProfile = ({ intials, available, bgColor }) => {
-    return (
-        <div className='user'>
-            <div className='icon' style={{ backgroundColor: bgColor }}>{intials}</div>
-            <div className='dot' style={available ? { color: "#50B053" } : {}}>
-                <FaCircle />
-            </div>
-        </div>
-    )
-}
+  return (
+    <div className="user">
+      <div className="icon" style={{ backgroundColor: bgColor }}>
+        {intials}
+      </div>
+      <div className="dot" style={available ? { color: "#50B053" } : {}}></div>
+    </div>
+  );
+};
 
 export default UserProfile;
