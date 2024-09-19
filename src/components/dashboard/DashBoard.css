@@ -1,0 +1,53 @@
+.DashBoard {
+    min-width: 390px;
+    padding: 5px;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .DashBoard_top {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    width: 100%;
+    text-transform: capitalize;
+  }
+  .DashBoard_top_name {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .DashBoard_top_name p {
+    font-weight: 500;
+  }
+  .DashBoard_top_name span {
+    color: gray;
+  }
+  .DashBoard_top_name svg {
+    height: 15px;
+    width: 15px;
+  }
+  .DashBoard_top_options {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    opacity: 0.5;
+    transition: 200ms;
+  }
+  .DashBoard_top:hover .DashBoard_top_options {
+    opacity: 1;
+  }
+  .DashBoard_top_options svg {
+    height: 20px;
+    width: 20px;
+    color: grey;
+    transition: 200ms;
+  }
+  .DashBoard_top_options svg:hover {
+    color: black;
+  }
+  .DashBoard_container {
+    overflow-y: auto;
+    height: 75vh;
+  }
