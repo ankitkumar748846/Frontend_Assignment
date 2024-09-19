@@ -1,8 +1,10 @@
 import './App.css';
-import { useState} from 'react';
+import { useState, useEffect } from 'react';
 import Navbar from './components/navbar/Navbar';
 
 function App() {
+  const [tasks, setTasks] = useState([]); 
+  const [users, setUsers] = useState([]);
   const [group, setGroup] = useState('status');
   const [order, setOrder] = useState('priority');
 
@@ -15,6 +17,21 @@ function App() {
     setOrder(orderSelected);
     localStorage.setItem("selectedOrder", orderSelected);
   }
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const res = await fetch('https://api.quicksell.co/v1/internal/frontend-assignment');
+        const data = await res.json();
+        setTasks(data.tickets); 
+        setUsers(data.users);
+      } catch (error) {
+        console.error("Unable to fetch data!", error);
+      }
+    };
+
+    fetchData();
+  }, []);
 
   return (
     <div className="App scroll-container">
