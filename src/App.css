@@ -5,3 +5,14 @@
   overflow-y: hidden;
   width: 100%;
 }
+.container {
+  flex: 1;
+  width: 100vw;
+  overflow-x: auto;
+  padding: 10px 20px;
+}
+.app {
+  display: flex;
+  min-width: fit-content;
+  gap: 30px;
+}
