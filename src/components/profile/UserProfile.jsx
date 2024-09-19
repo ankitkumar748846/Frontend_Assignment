@@ -1,7 +1,7 @@
 import "./UserProfile.css";
-
 const UserProfile = ({ intials, available, bgColor }) => {
   return (
+    // Implement the UserProfile component
     <div className="user">
       <div className="icon" style={{ backgroundColor: bgColor }}>
         {intials}
@@ -10,5 +10,4 @@ const UserProfile = ({ intials, available, bgColor }) => {
     </div>
   );
 };
-
 export default UserProfile;

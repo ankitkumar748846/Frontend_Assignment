@@ -4,9 +4,7 @@ import { FaCircleXmark, FaRegCircle } from "react-icons/fa6";
 import { TbCircleDotted } from "react-icons/tb";
 import { RxHalf2 } from "react-icons/rx";
 import { GiNetworkBars } from "react-icons/gi";
-
 const bgColors = ["#B57136", "#868728", "#4D9446", "#5F80E4"];
-
 export const priorities = [
   { title: "no priority", color: "gray", icon: <BsThreeDots /> },
   { title: "low", color: "lightgray", icon: <GiNetworkBars /> },
@@ -21,7 +19,6 @@ export const status = [
   { title: "done", color: "#606ACB", icon: <FaCheckCircle /> },
   { title: "cancelled", color: "gray", icon: <FaCircleXmark /> },
 ];
-
 export const statusIcons = {
   backlog: {
     color: "black",
@@ -44,7 +41,6 @@ export const statusIcons = {
     icon: <FaCircleXmark />,
   },
 };
-
 export const generateIntials = (name) => {
   return name
     .split(" ")

@@ -6,31 +6,19 @@
   width: 100%;
 }
 .main-container {
-  height: 55.5rem; /* Set fixed height */
-  /* overflow: hidden; Prevent overflow on main container */
+  height: 55.5rem;
 }
-
 .container {
   max-width: 100%;
-  height: 100%; /* Make container take full height of main container */
-  /* overflow-y: hidden; Enable vertical scrolling */
+  height: 100%;
   padding: 10px 20px;
   display: flex;
   justify-content: space-between;
   background-color: #f1f5f9;
 }
-
 @media screen and (max-width: 768px) {
   .container {
     flex-direction: column;
     overflow-x: hidden;
-    /* padding: 10px 8px; */
   }
 }
-
-/* .app {
-  display: flex;
-  min-width: fit-content;
-  gap: 30px;
-  background-color: aqua;
-} */

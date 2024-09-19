@@ -21,6 +21,7 @@ function App() {
   useEffect(() => {
     fetchData();
   }, []);
+  // Fetch data from the API
   const fetchData = async () => {
     try {
       const res = await fetch(
@@ -34,6 +35,7 @@ function App() {
     }
   };
   return (
+    // Implemented the App component
     <div className="App">
       <Navbar
         group={group}

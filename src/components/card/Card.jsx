@@ -7,6 +7,7 @@ const Card = ({ ticket, user, icon, statusIcon, statusColor, bgColor }) => {
     .map((word) => word.charAt(0))
     .join("");
   return (
+    // Implement the Card component
     <div className="card">
       <div className="header">
         <p className="id">{ticket?.id}</p>

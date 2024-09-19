@@ -28,6 +28,7 @@ const DashBoard = (props) => {
 
   if (group === "user") {
     return (
+      // Implement the DashBoard component
       <div className="DashBoard">
         <div className="DashBoard_top">
           <div className="DashBoard_top_name">

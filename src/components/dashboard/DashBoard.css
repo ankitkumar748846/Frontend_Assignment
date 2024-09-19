@@ -1,18 +1,17 @@
 .DashBoard {
-  width: fit-content; /* Adjust width as needed */
+  width: fit-content;
   padding: 9px;
-  height: 55.5rem; /* Fixed height to enable vertical scrolling */
+  height: 55.5rem;
   display: flex;
-  flex-direction: column; /* Stack components vertically */
+  flex-direction: column;
   overflow-y: auto;
   overflow-x: hidden;
-  align-items: center; /* Center items horizontally */
+  align-items: center;
 }
 @media screen and (max-width: 768px) {
   .DashBoard {
     width: 100%;
-    height: fit-content; /* Fixed height to enable vertical scrolling */
-    /* overflow-x: auto; */
+    height: fit-content;
     overflow: visible;
   }
 }
